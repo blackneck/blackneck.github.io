@@ -1,18 +1,28 @@
 body {
-  background-color: #102442;
+  background-color: #0f2442;
   color: white;
-  padding: 2% 25%;
+  padding: 2% 27%;
   font-family: 'Open Sans';
   display: flex;
   justify-content: center; }
 
-@media screen and (max-width: 1400px) {
-  body {
-    padding: 2% 15%; } }
+a {
+  text-decoration: none;
+  color: white; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:active {
+  text-decoration: underline; }
 
 @media screen and (max-width: 400px) {
   body {
-    padding: 0% 0%; } }
+    padding: 2% 10%; } }
+
+@media screen and (max-width: 1400px) {
+  body {
+    padding: 2% 5%; } }
 
 h1 {
   margin: 0px; }
@@ -41,10 +51,11 @@ h1 {
 
 .store-button {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  height: 50px; }
 
 .store-button img {
-  height: 42px; }
+  height: 55px; }
 
 .column {
   display: flex;
@@ -68,7 +79,7 @@ h1 {
 
 .title {
   display: flex;
-  flex: 4;
+  flex: 1;
   flex-wrap: wrap;
   justify-content: space-between; }
 
@@ -95,7 +106,6 @@ h1 {
   align-items: center; }
 
 .date {
-  white-space: nowrap;
   font-size: 16px;
   font-weight: 600;
   flex: 1; }
@@ -103,11 +113,16 @@ h1 {
 .twitter {
   display: flex;
   flex: 1;
-  justify-content: flex-end; }
+  align-items: center; }
 
 .twitter span {
   font-size: 11px;
-  opacity: 0.8; }
+  opacity: 0.8;
+  margin-left: 7px; }
+
+.twitter img {
+  width: 16px;
+  height: 14px; }
 
 .store {
   display: flex;
@@ -115,7 +130,8 @@ h1 {
   justify-content: space-between; }
 
 .confidence-container {
-  flex: 3;
+  flex: 1;
+  max-width: 310px;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -314,10 +330,11 @@ h1 {
   flex-wrap: wrap; }
 
 .predict-card {
-  margin: 20px 10px;
   border-width: 0.5px;
   border-color: rgba(255, 255, 255, 0.4);
   flex: 1;
+  margin-top: 20px;
+  max-width: 390px;
   background-color: rgba(0, 0, 0, 0.3); }
 
 @media screen and (max-width: 400px) {
@@ -350,14 +367,11 @@ h1 {
   margin-bottom: 7px; }
 
 .predict-card .content .line .line-bar {
+  margin-left: 30px;
   display: flex;
   flex-direction: row;
   flex: 1;
-  justify-content: flex-end;
-  margin-left: 5px; }
-
-.predict-card .btc-label {
-  flex: 1; }
+  justify-content: flex-end; }
 
 .predict-card .content span {
   opacity: 0.8;
@@ -388,14 +402,13 @@ h1 {
 
 .row-group {
   flex: 1;
-  padding: 5px 0;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center; }
 
 .row-group.name {
-  flex: 1;
+  flex: 1.5;
   justify-content: flex-start;
   padding-left: 30px; }
 
@@ -417,11 +430,7 @@ h1 {
 
 .row-group .order {
   font-size: 1.5vh;
-  white-space: nowrap;
-  flex: 0.5; }
-
-.row-group .coin-name {
-  flex: 1; }
+  white-space: nowrap; }
 
 .row-group .triangle {
   font-size: 1vh; }
@@ -441,7 +450,8 @@ footer {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  margin: 30px 0; }
 
 @media screen and (max-width: 400px) {
   .footer-wrapper {
@@ -488,4 +498,4 @@ footer {
   font-style: normal; }
 
 
-/*# sourceMappingURL=style.d56b57f4d41e4f412ea4.css.map*/
+/*# sourceMappingURL=style.44e2d32546b68e827df1.css.map*/
