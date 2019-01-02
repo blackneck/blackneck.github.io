@@ -1,7 +1,7 @@
 body {
   background-color: #0f2442;
   color: white;
-  padding: 2% 27%;
+  padding: 2% 25%;
   font-family: 'Open Sans';
   display: flex;
   justify-content: center; }
@@ -22,7 +22,7 @@ a:active {
 
 @media screen and (max-width: 1400px) {
   body {
-    padding: 2% 5%; } }
+    padding: 2% 15%; } }
 
 h1 {
   margin: 0px; }
@@ -330,11 +330,10 @@ h1 {
   flex-wrap: wrap; }
 
 .predict-card {
+  margin: 20px 10px;
   border-width: 0.5px;
   border-color: rgba(255, 255, 255, 0.4);
   flex: 1;
-  margin-top: 20px;
-  max-width: 390px;
   background-color: rgba(0, 0, 0, 0.3); }
 
 @media screen and (max-width: 400px) {
@@ -367,11 +366,14 @@ h1 {
   margin-bottom: 7px; }
 
 .predict-card .content .line .line-bar {
-  margin-left: 30px;
   display: flex;
   flex-direction: row;
   flex: 1;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  margin-left: 5px; }
+
+.predict-card .btc-label {
+  flex: 1; }
 
 .predict-card .content span {
   opacity: 0.8;
@@ -405,10 +407,11 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  padding: 5px 0; }
 
 .row-group.name {
-  flex: 1.5;
+  flex: 1;
   justify-content: flex-start;
   padding-left: 30px; }
 
@@ -430,7 +433,11 @@ h1 {
 
 .row-group .order {
   font-size: 1.5vh;
-  white-space: nowrap; }
+  white-space: nowrap;
+  flex: 0.5; }
+
+.row-group .coin-name {
+  flex: 1; }
 
 .row-group .triangle {
   font-size: 1vh; }
@@ -498,4 +505,4 @@ footer {
   font-style: normal; }
 
 
-/*# sourceMappingURL=style.44e2d32546b68e827df1.css.map*/
+/*# sourceMappingURL=style.53d74c111475aaeac553.css.map*/
