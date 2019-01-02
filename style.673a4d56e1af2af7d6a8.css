@@ -1,7 +1,7 @@
 body {
   background-color: #0f2442;
   color: white;
-  padding: 2% 25%;
+  padding: 2% 27%;
   font-family: 'Open Sans';
   display: flex;
   justify-content: center; }
@@ -51,11 +51,10 @@ h1 {
 
 .store-button {
   display: flex;
-  align-items: center;
-  height: 50px; }
+  align-items: center; }
 
 .store-button img {
-  height: 55px; }
+  height: 35px; }
 
 .column {
   display: flex;
@@ -104,6 +103,19 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center; }
+
+.date-n-store a {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-self: stretch; }
+
+@media screen and (max-width: 400px) {
+  .date-n-store {
+    flex-direction: column; }
+  .date-n-store a {
+    justify-content: center;
+    margin: 10px; } }
 
 .date {
   font-size: 16px;
@@ -200,6 +212,7 @@ h1 {
 
 @media screen and (max-width: 400px) {
   .cards-section {
+    flex-direction: column;
     justify-content: center; } }
 
 .card-wrapper {
@@ -281,11 +294,12 @@ h1 {
   flex: 1; }
 
 .bar {
-  flex: 1;
+  flex: 2;
   max-width: 121px;
   margin-right: 12px;
   background-color: #263750;
-  border-radius: 8px; }
+  border-radius: 8px;
+  height: 8px; }
 
 .bar div {
   border-radius: 8px;
@@ -343,18 +357,23 @@ h1 {
 .predict-card .header {
   padding: 10px 16px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: flex-end; }
 
 .predict-card .header span {
   font-style: italic;
-  font-size: 1.7vh; }
+  font-size: 1.7vh;
+  display: flex;
+  flex: 2; }
 
 .predict-card .header .column-title {
+  display: flex;
+  flex: 1;
   font-weight: bold;
   opacity: 0.3;
   color: white;
-  font-size: 1.5vh;
-  font-style: normal; }
+  font-size: 1.2vh;
+  font-style: normal;
+  text-align: end; }
 
 .predict-card .content {
   padding: 7px 12px;
@@ -365,11 +384,15 @@ h1 {
   justify-content: space-between;
   margin-bottom: 7px; }
 
+.predict-card .content .predict-label {
+  flex: 1; }
+
 .predict-card .content .line .line-bar {
   display: flex;
   flex-direction: row;
   flex: 1;
   justify-content: flex-end;
+  align-items: center;
   margin-left: 5px; }
 
 .predict-card .btc-label {
@@ -381,9 +404,14 @@ h1 {
   font-size: 1.2vh; }
 
 .predict-card .content .digit {
+  display: flex;
+  flex: 1;
   opacity: 0.3;
   color: white;
-  font-weight: bold; }
+  font-weight: bold;
+  flex: 0.7;
+  text-align: end;
+  align-self: center; }
 
 .table-section {
   margin-top: 30px;
@@ -403,7 +431,7 @@ h1 {
   background-color: #102442; }
 
 .row-group {
-  flex: 1;
+  flex: 0.8;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -411,7 +439,7 @@ h1 {
   padding: 5px 0; }
 
 .row-group.name {
-  flex: 1;
+  flex: 1.7;
   justify-content: flex-start;
   padding-left: 30px; }
 
@@ -434,13 +462,16 @@ h1 {
 .row-group .order {
   font-size: 1.5vh;
   white-space: nowrap;
-  flex: 0.5; }
+  flex: 0.2; }
 
 .row-group .coin-name {
   flex: 1; }
 
 .row-group .triangle {
   font-size: 1vh; }
+
+.table-row.header {
+  border-bottom: 0.5px solid #566476; }
 
 .table-row.header span {
   text-align: center;
@@ -452,15 +483,20 @@ footer {
   display: flex;
   align-items: center; }
 
+footer img {
+  margin-top: -40px;
+  height: 170px; }
+
 .footer-wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin: 30px 0; }
+  align-items: center; }
 
 @media screen and (max-width: 400px) {
+  footer img {
+    display: none; }
   .footer-wrapper {
     flex-direction: column;
     align-items: flex-start;
@@ -469,7 +505,7 @@ footer {
 .footer-wrapper .logo-wrapper {
   margin-top: 20px;
   display: flex;
-  flex: 1;
+  flex: 1.2;
   flex-direction: column; }
 
 .footer-wrapper .logo-wrapper .description {
@@ -479,7 +515,7 @@ footer {
 .disclamer-wrapper {
   margin-top: 20px;
   display: flex;
-  flex: 1; }
+  flex: 2; }
 
 .disclamer-wrapper span {
   color: #e9ebf1;
@@ -505,4 +541,4 @@ footer {
   font-style: normal; }
 
 
-/*# sourceMappingURL=style.53d74c111475aaeac553.css.map*/
+/*# sourceMappingURL=style.673a4d56e1af2af7d6a8.css.map*/
