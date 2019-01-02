@@ -109,14 +109,14 @@ h1 {
   display: flex;
   flex: 1;
   justify-content: flex-end;
-  align-self: stretch; }
+  align-self: stretch;
+  margin: 10px; }
 
 @media screen and (max-width: 400px) {
   .date-n-store {
     flex-direction: column; }
   .date-n-store a {
-    justify-content: center;
-    margin: 10px; } }
+    justify-content: center; } }
 
 .date {
   font-size: 16px;
@@ -543,4 +543,4 @@ footer img {
   font-style: normal; }
 
 
-/*# sourceMappingURL=style.eb252d0aeb3c2ce0fcc0.css.map*/
+/*# sourceMappingURL=style.69499bc381ccc189ce4f.css.map*/
