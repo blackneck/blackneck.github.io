@@ -19,14 +19,15 @@
 #week-ratings {
   background-color: #0f2442;
   color: white;
-  width: 850px;
+  width: 780px;
   margin: 0 auto;
   font-family: 'Open Sans';
-  padding: 10px 10px 0 10px;
+  padding: 24px 32px;
   justify-content: center; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1000px) {
     #week-ratings {
-      width: auto; } }
+      width: auto;
+      padding: 3px 4px 0; } }
   #week-ratings a {
     text-decoration: none;
     color: white; }
@@ -82,19 +83,19 @@
     flex: 1;
     flex-wrap: wrap;
     font-size: 1.5rem;
-    margin-top: 10px;
-    font-weight: 600;
-    justify-content: space-between; }
-  #week-ratings .description {
+    letter-spacing: 0.32px;
+    margin-bottom: 17px; }
+  #week-ratings .title-text .logo-text {
+    margin-right: 10px; }
+  #week-ratings .title .description {
     text-align: justify;
     font-size: 0.75rem;
     color: rgba(255, 255, 255, 0.9);
-    margin-top: 10px; }
+    margin-bottom: 22px; }
   #week-ratings .date-n-store {
     display: flex;
     flex: 1;
     flex-direction: row;
-    margin-top: 10px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; }
@@ -102,13 +103,13 @@
     display: flex;
     flex: 1;
     justify-content: flex-end;
-    align-self: stretch;
-    margin: 10px; }
+    align-self: stretch; }
   @media screen and (max-width: 800px) {
     #week-ratings .date-n-store {
       flex-direction: column; }
     #week-ratings .date-n-store a {
-      justify-content: center; } }
+      justify-content: center;
+      margin-top: 10px; } }
   #week-ratings .date {
     font-size: 0.9rem;
     font-weight: 600;
@@ -131,21 +132,17 @@
     justify-content: space-between; }
   #week-ratings .confidence-container {
     flex: 3;
-    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    margin-left: 50px; }
+    margin-left: 45px; }
   @media screen and (max-width: 800px) {
     #week-ratings .confidence-container {
-      margin: 10px; } }
+      margin: 10px 10px 0; } }
   #week-ratings .confidence-header {
-    display: flex;
-    align-self: stretch;
-    border-bottom: 1px solid;
-    padding: 9px 30px;
-    justify-content: center;
+    text-align: center;
+    padding: 9px 0px;
     font-size: 0.86rem;
-    font-weight: 600; }
+    letter-spacing: 1.15px; }
   #week-ratings .confidence-content {
     display: flex;
     flex: 1; }
@@ -156,13 +153,16 @@
     flex-direction: column;
     flex: 1; }
   #week-ratings .confidence-block.red {
-    background-color: rgba(234, 22, 22, 0.2); }
+    background-color: rgba(234, 22, 22, 0.2);
+    border-top: 1px solid white; }
   #week-ratings .confidence-block.blue {
     background-color: rgba(44, 144, 215, 0.2);
     border-left: 1px solid white;
-    border-right: 1px solid white; }
+    border-right: 1px solid white;
+    border-top: 1px solid white; }
   #week-ratings .confidence-block.green {
-    background-color: rgba(94, 172, 3, 0.2); }
+    background-color: rgba(94, 172, 3, 0.2);
+    border-top: 1px solid white; }
   #week-ratings .confidence-text {
     font-size: 0.92rem; }
   #week-ratings .confidence-digit {
@@ -177,12 +177,14 @@
   #week-ratings .confidence-digit.red {
     color: red; }
   #week-ratings .cards-section {
-    margin-top: 30px;
+    padding: 30px 20px;
+    margin: 0 -20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, rgba(11, 25, 46, 0) 0%, rgba(11, 25, 46, 0) 38%, #0b192e 100%); }
   @media screen and (max-width: 800px) {
     #week-ratings .cards-section {
       flex-direction: column;
@@ -191,11 +193,11 @@
     border-width: 0.5px;
     border-color: rgba(255, 255, 255, 0.4);
     flex: 1;
-    margin-top: 20px;
     max-width: 225px; }
   @media screen and (max-width: 800px) {
     #week-ratings .card-wrapper {
-      min-width: 300px; } }
+      min-width: 300px;
+      margin-top: 20px; } }
   #week-ratings .card-wrapper img {
     width: 42px;
     height: 42px;
@@ -274,33 +276,37 @@
   #week-ratings .forecast-block {
     display: flex;
     flex-direction: column; }
-  #week-ratings .forecast-block span {
-    font-size: 0.63rem; }
-  #week-ratings .forecast-block .header {
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.3); }
-  #week-ratings .forecast-block .value {
-    align-self: flex-start; }
-  #week-ratings .forecast-block .triangle {
-    font-size: 0.63rem; }
+    #week-ratings .forecast-block span {
+      font-size: 0.63rem; }
+    #week-ratings .forecast-block .header {
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.3); }
+    #week-ratings .forecast-block .value {
+      align-self: flex-start; }
+    #week-ratings .forecast-block .triangle {
+      font-size: 0.63rem; }
   #week-ratings .predict-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap; }
+    align-items: flex-start; }
   #week-ratings .predict-card {
+    width: 390px;
     margin: 20px 0;
     border-width: 0.5px;
     border-color: rgba(255, 255, 255, 0.4);
     flex: 1;
     background-color: rgba(0, 0, 0, 0.3); }
   #week-ratings .predict-card.right {
-    margin-left: 10px; }
+    margin-left: 27px; }
   @media screen and (max-width: 800px) {
     #week-ratings .predict-section {
       flex-direction: column;
-      align-items: center; } }
+      align-items: center; }
+    #week-ratings .predict-card.right {
+      margin-left: 0px; }
+    #week-ratings .predict-card {
+      width: auto; } }
   #week-ratings .predict-card .header {
     padding: 10px 16px;
     display: flex;
@@ -316,7 +322,7 @@
     color: white;
     font-size: 0.63rem;
     font-style: normal;
-    text-align: end; }
+    text-align: center; }
   #week-ratings .predict-card .header .column-headline {
     display: flex;
     flex: 3; }
@@ -352,14 +358,15 @@
   #week-ratings .predict-card.right .content .digit {
     flex: 0.7; }
   #week-ratings .table-section {
-    margin-top: 30px;
+    margin: 0 -20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap; }
   #week-ratings .table-row {
     justify-content: space-evenly;
-    align-self: stretch; }
+    align-self: stretch;
+    padding: 0 20px; }
   #week-ratings .table-row.dark {
     background-color: #0b192e; }
   #week-ratings .table-row.light {
@@ -413,7 +420,8 @@
     text-align: end; }
   #week-ratings footer {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: -20px; }
   #week-ratings footer img {
     margin-top: -40px;
     height: 170px; }
@@ -431,15 +439,13 @@
       align-items: flex-start;
       justify-content: center; } }
   #week-ratings .footer-wrapper .logo-wrapper {
-    margin-top: 20px;
     display: flex;
     flex: 1.2;
     flex-direction: column; }
   #week-ratings .footer-wrapper .logo-wrapper .description {
     font-size: 0.8rem;
-    font-weight: 600; }
+    letter-spacing: -0.07px; }
   #week-ratings .disclamer-wrapper {
-    margin-top: 20px;
     display: flex;
     flex: 2; }
   #week-ratings .disclamer-wrapper span {
@@ -448,4 +454,4 @@
     font-size: 0.57rem; }
 
 
-/*# sourceMappingURL=style.1431597a1d4ac5080973.css.map*/
+/*# sourceMappingURL=main.bundle.3764328eaa93b3fcecf2.css.map*/
