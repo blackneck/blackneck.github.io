@@ -1,0 +1,169 @@
+body {
+  display: flex;
+  flex: 1;
+  font-family: "Montserrat", sans-serif;
+  background-color: #292c34;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: linear-gradient(#e66465, #9198e5);
+  }
+}
+@media only screen and (max-width: 767px) {
+  #background-video {
+    display: none;
+  }
+}
+#background-video {
+  position: fixed;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 0;
+}
+
+.page-wrapper {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  animation: fadein 3s;
+  -moz-animation: fadein 3s; /* Firefox */
+  -webkit-animation: fadein 3s; /* Safari and Chrome */
+  -o-animation: fadein 3s; /* Opera */
+}
+@media only screen and (max-height: 325px) {
+  .page-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.social-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fab,
+.fas {
+  font-size: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .fab,
+  .fas {
+    font-size: 15px;
+  }
+}
+
+.tg {
+  color: #e06c75;
+}
+
+.in {
+  color: #e5c07b;
+}
+
+.fb {
+  color: #98c379;
+}
+
+.em {
+  color: #61afef;
+}
+
+.page-wrapper .gift {
+  margin: 50px 0;
+  font-size: 100px;
+}
+
+@media only screen and (max-height: 325px) {
+  .page-wrapper .gift {
+    margin: 0 0 0 50px;
+  }
+}
+
+.gift img {
+  width: 100px;
+  height: 120px;
+}
+
+.hello-card .top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 0 20px;
+  background: #3f5c96;
+  font-weight: bold;
+  font-size: 50px;
+}
+@media only screen and (max-width: 767px) {
+  .hello-card .top {
+    font-size: 25px;
+  }
+}
+.hello-card .middle {
+  font-family: "Shadows Into Light", cursive;
+  background: #ffffff;
+  color: #000000;
+  font-size: 50px;
+  padding: 0 30px;
+}
+@media only screen and (max-width: 767px) {
+  .hello-card .middle {
+    font-size: 25px;
+  }
+}
+.hello-card .bottom {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: #3f5c96;
+  padding: 7px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
