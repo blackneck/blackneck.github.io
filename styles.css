@@ -91,18 +91,31 @@ a:focus {
   color: #61afef;
 }
 
-.page-wrapper .gift {
-  margin: 50px 0;
+.pointerAndCV {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pointerAndCV .CV {
   font-size: 100px;
 }
 
+.pointerAndCV .pointer {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  align-self: center;
+  margin-bottom: -35px;
+}
+
 @media only screen and (max-height: 325px) {
-  .page-wrapper .gift {
+  .pointerAndCV .CV {
     margin: 0 0 0 50px;
   }
 }
 
-.gift img {
+.CV img {
   width: 100px;
   height: 120px;
 }
